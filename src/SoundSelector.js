@@ -143,6 +143,47 @@ class SoundSelector extends React.Component {
 
         <div className="snare">
           <h3>Snare</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSnareChange}
+              defaultChecked
+              value={this.props.sounds.sound3.audio}
+              name="snare"
+              title="Luger Snare"
+            />
+            Lex Luger
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSnareChange}
+              value={this.props.sounds.sound14.audio}
+              name="snare"
+              title="Purple Kups"
+            />
+            Purple Kups
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSnareChange}
+              value={this.props.sounds.sound15.audio}
+              name="snare"
+              title="Metro Snare"
+            />
+            Metro Boomin
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSnareChange}
+              value={this.props.sounds.sound16.audio}
+              name="snare"
+              title="Big Head"
+            />
+            Big Head
+          </label>
         </div>
 
         <div className="closed-hat">

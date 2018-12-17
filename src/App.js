@@ -41,10 +41,16 @@ class App extends Component {
     this.setState({ kick: kick });
   };
 
+  handleSnareChange = e => {
+    const snare = { ...this.state.snare };
+    snare.name = e.target.title;
+    snare.audio = e.target.value;
+    this.setState({ snare: snare });
+  };
+
   handleKeyDown = e => {
     if (e.key === "a") {
       console.log("a has been pressed");
-      console.log(this.state.first808);
       const audio = new Audio(`${this.state.first808.audio}`);
       audio.loop = false;
       audio.play();
@@ -109,6 +115,7 @@ class App extends Component {
           handleFirst808Change={this.handleFirst808Change}
           handleSecond808Change={this.handleSecond808Change}
           handleKickChange={this.handleKickChange}
+          handleSnareChange={this.handleSnareChange}
         />
       </div>
     );

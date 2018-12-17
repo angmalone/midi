@@ -62,6 +62,21 @@ const sounds = {
   sound13: {
     name: "Southside Kick",
     audio: "/sounds/SS_Kick.wav"
+  },
+
+  sound14: {
+    name: "Purple Kups",
+    audio: "/sounds/PK_Snare.wav"
+  },
+
+  sound15: {
+    name: "Metro Snare",
+    audio: "/sounds/MB_Snare.wav"
+  },
+
+  sound16: {
+    name: "Big Head",
+    audio: "/sounds/BH_Snare.wav"
   }
 };
 
