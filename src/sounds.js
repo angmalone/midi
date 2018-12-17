@@ -47,6 +47,21 @@ const sounds = {
   sound10: {
     name: "Sumo",
     audio: "/sounds/SM_808.wav"
+  },
+
+  sound11: {
+    name: "Desiigner",
+    audio: "/sounds/MD_Kick.wav"
+  },
+
+  sound12: {
+    name: "Metro Kick",
+    audio: "/sounds/MB_Kick.wav"
+  },
+
+  sound13: {
+    name: "Southside Kick",
+    audio: "/sounds/SS_Kick.wav"
   }
 };
 

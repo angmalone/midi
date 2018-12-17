@@ -98,6 +98,47 @@ class SoundSelector extends React.Component {
 
         <div className="kick">
           <h3>Kick</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleKickChange}
+              defaultChecked
+              value={this.props.sounds.sound3.audio}
+              name="kick"
+              title="Big Kick"
+            />
+            Big Kick
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleKickChange}
+              value={this.props.sounds.sound11.audio}
+              name="kick"
+              title="Desiigner"
+            />
+            Desiigner
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleKickChange}
+              value={this.props.sounds.sound12.audio}
+              name="kick"
+              title="Metro Kick"
+            />
+            Metro Boomin
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleKickChange}
+              value={this.props.sounds.sound13.audio}
+              name="kick"
+              title="Southside Kick"
+            />
+            Southside
+          </label>
         </div>
 
         <div className="snare">

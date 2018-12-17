@@ -28,13 +28,17 @@ class App extends Component {
   };
 
   handleSecond808Change = e => {
-    //1. copy current state
     const second808 = { ...this.state.second808 };
-    //2. change the sound
     second808.name = e.target.title;
     second808.audio = e.target.value;
-    //3. set state
     this.setState({ second808: second808 });
+  };
+
+  handleKickChange = e => {
+    const kick = { ...this.state.kick };
+    kick.name = e.target.title;
+    kick.audio = e.target.value;
+    this.setState({ kick: kick });
   };
 
   handleKeyDown = e => {
@@ -104,6 +108,7 @@ class App extends Component {
           sounds={this.state.sounds}
           handleFirst808Change={this.handleFirst808Change}
           handleSecond808Change={this.handleSecond808Change}
+          handleKickChange={this.handleKickChange}
         />
       </div>
     );
