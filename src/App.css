@@ -2,14 +2,20 @@
   text-align: center;
 }
 
-#root {
-  margin: 0 auto;
+body {
+  background-color: #16151a;
 }
 
 h2,
-h3 {
+h3,
+label {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
+  color: white;
+}
+
+p {
+  font-size: 11px;
 }
 
 label {
@@ -32,21 +38,24 @@ button {
 
 button:focus {
   outline: none;
-  background-color: #2f2e33;
 }
 
 .controller {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   background-color: #2f2e33;
 }
 
 .first-row,
-.second-row {
+.second-row,
+.sound-selector {
   flex-direction: row;
   display: flex;
   margin: 0 auto;
+}
+
+.sound-selector {
+  justify-content: space-evenly;
 }
 
 /* .first-row {

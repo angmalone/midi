@@ -19,6 +19,7 @@ class SoundSelector extends React.Component {
             />
             Lucid Dreams
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -29,6 +30,7 @@ class SoundSelector extends React.Component {
             />
             No Heart
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -39,6 +41,7 @@ class SoundSelector extends React.Component {
             />
             Sonny
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -63,6 +66,7 @@ class SoundSelector extends React.Component {
             />
             Lucid Dreams
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -74,6 +78,7 @@ class SoundSelector extends React.Component {
             />
             No Heart
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -84,6 +89,7 @@ class SoundSelector extends React.Component {
             />
             Sonny
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -109,6 +115,7 @@ class SoundSelector extends React.Component {
             />
             Big Kick
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -119,23 +126,25 @@ class SoundSelector extends React.Component {
             />
             Desiigner
           </label>
+          <br />
           <label>
             <input
               type="radio"
               onChange={this.props.handleKickChange}
               value={this.props.sounds.sound12.audio}
               name="kick"
-              title="Metro Kick"
+              title="Metro Boomin"
             />
             Metro Boomin
           </label>
+          <br />
           <label>
             <input
               type="radio"
               onChange={this.props.handleKickChange}
               value={this.props.sounds.sound13.audio}
               name="kick"
-              title="Southside Kick"
+              title="Southside"
             />
             Southside
           </label>
@@ -150,10 +159,11 @@ class SoundSelector extends React.Component {
               defaultChecked
               value={this.props.sounds.sound3.audio}
               name="snare"
-              title="Luger Snare"
+              title="Lex Luger"
             />
             Lex Luger
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -164,16 +174,18 @@ class SoundSelector extends React.Component {
             />
             Purple Kups
           </label>
+          <br />
           <label>
             <input
               type="radio"
               onChange={this.props.handleSnareChange}
               value={this.props.sounds.sound15.audio}
               name="snare"
-              title="Metro Snare"
+              title="Metro Boomin"
             />
             Metro Boomin
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -195,10 +207,11 @@ class SoundSelector extends React.Component {
               defaultChecked
               value={this.props.sounds.sound5.audio}
               name="closed-hat"
-              title="Metro Closed"
+              title="Metro Boomin"
             />
             Metro Boomin
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -209,6 +222,7 @@ class SoundSelector extends React.Component {
             />
             Deso
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -219,6 +233,7 @@ class SoundSelector extends React.Component {
             />
             Lofi
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -240,10 +255,11 @@ class SoundSelector extends React.Component {
               defaultChecked
               value={this.props.sounds.sound6.audio}
               name="open-hat"
-              title="MP Open"
+              title="My People"
             />
             My People
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -254,16 +270,18 @@ class SoundSelector extends React.Component {
             />
             Dallas
           </label>
+          <br />
           <label>
             <input
               type="radio"
               onChange={this.props.handleOpenHatChange}
               value={this.props.sounds.sound21.audio}
               name="open-hat"
-              title="Slat"
+              title="Slat 🐍"
             />
             SLAT 🐍
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -289,6 +307,7 @@ class SoundSelector extends React.Component {
             />
             F
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -299,6 +318,7 @@ class SoundSelector extends React.Component {
             />
             A#
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -309,6 +329,7 @@ class SoundSelector extends React.Component {
             />
             C
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -334,6 +355,7 @@ class SoundSelector extends React.Component {
             />
             UZ
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -344,6 +366,7 @@ class SoundSelector extends React.Component {
             />
             Southside
           </label>
+          <br />
           <label>
             <input
               type="radio"
@@ -354,6 +377,7 @@ class SoundSelector extends React.Component {
             />
             Day
           </label>
+          <br />
           <label>
             <input
               type="radio"

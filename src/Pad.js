@@ -5,7 +5,10 @@ class Pad extends React.Component {
     return (
       <div className="midi-pad">
         <button onKeyDown={this.props.handleKeyDown}>
-          <p>{this.props.name}</p>
+          <p>
+            {this.props.text}: <br />
+            {this.props.name}
+          </p>
         </button>
       </div>
     );

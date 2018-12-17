@@ -133,36 +133,44 @@ class App extends Component {
         <div className="controller">
           <div className="first-row">
             <Pad
+              text="first 808"
               name={this.state.first808.name}
               handleKeyDown={this.handleKeyDown}
             />
             <Pad
+              text="second 808"
               name={this.state.second808.name}
               handleKeyDown={this.handleKeyDown}
             />
             <Pad
+              text="kick"
               name={this.state.kick.name}
               handleKeyDown={this.handleKeyDown}
             />
             <Pad
+              text="snare"
               name={this.state.snare.name}
               handleKeyDown={this.handleKeyDown}
             />
           </div>
           <div className="second-row">
             <Pad
+              text="closed hat"
               name={this.state.closedHat.name}
               handleKeyDown={this.handleKeyDown}
             />
             <Pad
+              text="open hat"
               name={this.state.openHat.name}
               handleKeyDown={this.handleKeyDown}
             />
             <Pad
+              text="sub"
               name={this.state.sub.name}
               handleKeyDown={this.handleKeyDown}
             />
             <Pad
+              text="clap"
               name={this.state.clap.name}
               handleKeyDown={this.handleKeyDown}
             />
