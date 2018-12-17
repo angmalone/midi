@@ -12,8 +12,10 @@ class SoundSelector extends React.Component {
             <input
               type="radio"
               onChange={this.props.handleFirst808Change}
+              defaultChecked
               value={this.props.sounds.sound1.audio}
               name="first-808"
+              title="Lucid Dreams"
             />
             Lucid Dreams
           </label>
@@ -23,6 +25,7 @@ class SoundSelector extends React.Component {
               onChange={this.props.handleFirst808Change}
               value={this.props.sounds.sound2.audio}
               name="first-808"
+              title="No Heart"
             />
             No Heart
           </label>

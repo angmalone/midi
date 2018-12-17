@@ -18,12 +18,14 @@ class App extends Component {
   };
 
   handleFirst808Change = e => {
-    e.preventDefault();
     //1. copy current state
+    const first808 = { ...this.state.first808 };
     console.log("changed");
     console.log(this.state.first808);
+    first808.name = e.target.title;
+    first808.audio = e.target.value;
     //2. change the sound
-    this.setState({ first808: e.target.value });
+    this.setState({ first808: first808 });
   };
 
   handleKeyDown = e => {
