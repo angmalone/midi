@@ -77,6 +77,21 @@ const sounds = {
   sound16: {
     name: "Big Head",
     audio: "/sounds/BH_Snare.wav"
+  },
+
+  sound17: {
+    name: "Deso",
+    audio: "/sounds/AD_ClosedHat.wav"
+  },
+
+  sound18: {
+    name: "Lofi",
+    audio: "/sounds/LF_ClosedHat.wav"
+  },
+
+  sound19: {
+    name: "Draco",
+    audio: "/sounds/DC_ClosedHat.wav"
   }
 };
 

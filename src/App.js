@@ -48,6 +48,13 @@ class App extends Component {
     this.setState({ snare: snare });
   };
 
+  handleClosedHatChange = e => {
+    const closedHat = { ...this.state.closedHat };
+    closedHat.name = e.target.title;
+    closedHat.audio = e.target.value;
+    this.setState({ closedHat: closedHat });
+  };
+
   handleKeyDown = e => {
     if (e.key === "a") {
       console.log("a has been pressed");
@@ -116,6 +123,7 @@ class App extends Component {
           handleSecond808Change={this.handleSecond808Change}
           handleKickChange={this.handleKickChange}
           handleSnareChange={this.handleSnareChange}
+          handleClosedHatChange={this.handleClosedHatChange}
         />
       </div>
     );

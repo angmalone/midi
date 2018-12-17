@@ -188,6 +188,47 @@ class SoundSelector extends React.Component {
 
         <div className="closed-hat">
           <h3>Closed Hat</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClosedHatChange}
+              defaultChecked
+              value={this.props.sounds.sound5.audio}
+              name="closed-hat"
+              title="Metro Closed"
+            />
+            Metro Boomin
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClosedHatChange}
+              value={this.props.sounds.sound17.audio}
+              name="closed-hat"
+              title="Deso"
+            />
+            Deso
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClosedHatChange}
+              value={this.props.sounds.sound18.audio}
+              name="closed-hat"
+              title="Lofi"
+            />
+            Lofi
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClosedHatChange}
+              value={this.props.sounds.sound19.audio}
+              name="closed-hat"
+              title="Draco"
+            />
+            Draco
+          </label>
         </div>
 
         <div className="open-hat">
