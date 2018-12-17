@@ -69,6 +69,13 @@ class App extends Component {
     this.setState({ sub: sub });
   };
 
+  handleClapChange = e => {
+    const clap = { ...this.state.clap };
+    clap.name = e.target.title;
+    clap.audio = e.target.value;
+    this.setState({ clap: clap });
+  };
+
   handleKeyDown = e => {
     if (e.key === "a") {
       console.log("a has been pressed");
@@ -140,6 +147,7 @@ class App extends Component {
           handleClosedHatChange={this.handleClosedHatChange}
           handleOpenHatChange={this.handleOpenHatChange}
           handleSubChange={this.handleSubChange}
+          handleClapChange={this.handleClapChange}
         />
       </div>
     );

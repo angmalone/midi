@@ -122,6 +122,21 @@ const sounds = {
   sound25: {
     name: "F#",
     audio: "/sounds/FS_Sub.wav"
+  },
+
+  sound26: {
+    name: "Southside",
+    audio: "/sounds/SS_Clap.wav"
+  },
+
+  sound27: {
+    name: "Day",
+    audio: "/sounds/D_Clap.wav"
+  },
+
+  sound28: {
+    name: "Deso",
+    audio: "/sounds/DS_Clap.wav"
   }
 };
 

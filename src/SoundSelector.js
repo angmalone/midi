@@ -4,7 +4,7 @@ class SoundSelector extends React.Component {
   render() {
     return (
       <div className="sound-selector">
-        <h2>Choose Sounds</h2>
+        <h2>Select Sounds</h2>
 
         <div className="first-808">
           <h3>First 808</h3>
@@ -323,6 +323,47 @@ class SoundSelector extends React.Component {
 
         <div className="clap">
           <h3>Clap</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClapChange}
+              defaultChecked
+              value={this.props.sounds.sound8.audio}
+              name="clap"
+              title="UZ"
+            />
+            UZ
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClapChange}
+              value={this.props.sounds.sound26.audio}
+              name="clap"
+              title="Southside"
+            />
+            Southside
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClapChange}
+              value={this.props.sounds.sound27.audio}
+              name="clap"
+              title="Day"
+            />
+            Day
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleClapChange}
+              value={this.props.sounds.sound28.audio}
+              name="clap"
+              title="Deso"
+            />
+            Deso
+          </label>
         </div>
       </div>
     );
