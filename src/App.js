@@ -20,11 +20,10 @@ class App extends Component {
   handleFirst808Change = e => {
     //1. copy current state
     const first808 = { ...this.state.first808 };
-    console.log("changed");
-    console.log(this.state.first808);
+    //2. change the sound
     first808.name = e.target.title;
     first808.audio = e.target.value;
-    //2. change the sound
+    //3. set state
     this.setState({ first808: first808 });
   };
 
