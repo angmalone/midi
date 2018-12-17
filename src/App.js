@@ -129,15 +129,45 @@ class App extends Component {
 
   render() {
     return (
-      <div className="controller">
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
-        <Pad handleKeyDown={this.handleKeyDown} />
+      <div className="full">
+        <div className="controller">
+          <div className="first-row">
+            <Pad
+              name={this.state.first808.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+            <Pad
+              name={this.state.second808.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+            <Pad
+              name={this.state.kick.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+            <Pad
+              name={this.state.snare.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+          </div>
+          <div className="second-row">
+            <Pad
+              name={this.state.closedHat.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+            <Pad
+              name={this.state.openHat.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+            <Pad
+              name={this.state.sub.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+            <Pad
+              name={this.state.clap.name}
+              handleKeyDown={this.handleKeyDown}
+            />
+          </div>
+        </div>
         <SoundSelector
           sounds={this.state.sounds}
           handleFirst808Change={this.handleFirst808Change}
