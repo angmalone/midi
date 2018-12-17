@@ -29,10 +29,71 @@ class SoundSelector extends React.Component {
             />
             No Heart
           </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleFirst808Change}
+              value={this.props.sounds.sound9.audio}
+              name="first-808"
+              title="Sonny"
+            />
+            Sonny
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleFirst808Change}
+              value={this.props.sounds.sound10.audio}
+              name="first-808"
+              title="Sumo"
+            />
+            Sumo
+          </label>
         </div>
 
         <div className="second-808">
           <h3>Second 808</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSecond808Change}
+              value={this.props.sounds.sound1.audio}
+              name="second-808"
+              title="Lucid Dreams"
+            />
+            Lucid Dreams
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSecond808Change}
+              defaultChecked
+              value={this.props.sounds.sound2.audio}
+              name="second-808"
+              title="No Heart"
+            />
+            No Heart
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSecond808Change}
+              value={this.props.sounds.sound9.audio}
+              name="second-808"
+              title="Sonny"
+            />
+            Sonny
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSecond808Change}
+              value={this.props.sounds.sound10.audio}
+              name="second-808"
+              title="Sumo"
+            />
+            Sumo
+          </label>
         </div>
 
         <div className="kick">

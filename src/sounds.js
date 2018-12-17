@@ -37,6 +37,16 @@ const sounds = {
   sound8: {
     name: "UZ Clap",
     audio: "/sounds/UZ_Clap.wav"
+  },
+
+  sound9: {
+    name: "Sonny",
+    audio: "/sounds/SD_808.wav"
+  },
+
+  sound10: {
+    name: "Sumo",
+    audio: "/sounds/SM_808.wav"
   }
 };
 

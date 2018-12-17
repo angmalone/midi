@@ -27,6 +27,16 @@ class App extends Component {
     this.setState({ first808: first808 });
   };
 
+  handleSecond808Change = e => {
+    //1. copy current state
+    const second808 = { ...this.state.second808 };
+    //2. change the sound
+    second808.name = e.target.title;
+    second808.audio = e.target.value;
+    //3. set state
+    this.setState({ second808: second808 });
+  };
+
   handleKeyDown = e => {
     if (e.key === "a") {
       console.log("a has been pressed");
@@ -66,7 +76,7 @@ class App extends Component {
       audio.play();
     }
     if (e.key === "l") {
-      console.log("k has been pressed");
+      console.log("l has been pressed");
       const audio = new Audio(`${this.state.sub.audio}`);
       audio.loop = false;
       audio.play();
@@ -93,6 +103,7 @@ class App extends Component {
         <SoundSelector
           sounds={this.state.sounds}
           handleFirst808Change={this.handleFirst808Change}
+          handleSecond808Change={this.handleSecond808Change}
         />
       </div>
     );
