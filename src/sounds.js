@@ -30,8 +30,8 @@ const sounds = {
   },
 
   sound7: {
-    name: "Sophie",
-    audio: "/sounds/Sophie_Sub.wav"
+    name: "F",
+    audio: "/sounds/F_Sub.wav"
   },
 
   sound8: {
@@ -92,6 +92,36 @@ const sounds = {
   sound19: {
     name: "Draco",
     audio: "/sounds/DC_ClosedHat.wav"
+  },
+
+  sound20: {
+    name: "Dallas",
+    audio: "/sounds/D_OpenHat.wav"
+  },
+
+  sound21: {
+    name: "Slat",
+    audio: "/sounds/AD_OpenHat.wav"
+  },
+
+  sound22: {
+    name: "Live",
+    audio: "/sounds/EK_OpenHat.wav"
+  },
+
+  sound23: {
+    name: "A#",
+    audio: "/sounds/AS_Sub.wav"
+  },
+
+  sound24: {
+    name: "C",
+    audio: "/sounds/C_Sub.wav"
+  },
+
+  sound25: {
+    name: "F#",
+    audio: "/sounds/FS_Sub.wav"
   }
 };
 

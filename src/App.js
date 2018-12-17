@@ -55,6 +55,20 @@ class App extends Component {
     this.setState({ closedHat: closedHat });
   };
 
+  handleOpenHatChange = e => {
+    const openHat = { ...this.state.openHat };
+    openHat.name = e.target.title;
+    openHat.audio = e.target.value;
+    this.setState({ openHat: openHat });
+  };
+
+  handleSubChange = e => {
+    const sub = { ...this.state.sub };
+    sub.name = e.target.title;
+    sub.audio = e.target.value;
+    this.setState({ sub: sub });
+  };
+
   handleKeyDown = e => {
     if (e.key === "a") {
       console.log("a has been pressed");
@@ -124,6 +138,8 @@ class App extends Component {
           handleKickChange={this.handleKickChange}
           handleSnareChange={this.handleSnareChange}
           handleClosedHatChange={this.handleClosedHatChange}
+          handleOpenHatChange={this.handleOpenHatChange}
+          handleSubChange={this.handleSubChange}
         />
       </div>
     );

@@ -233,10 +233,92 @@ class SoundSelector extends React.Component {
 
         <div className="open-hat">
           <h3>Open Hat</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleOpenHatChange}
+              defaultChecked
+              value={this.props.sounds.sound6.audio}
+              name="open-hat"
+              title="MP Open"
+            />
+            My People
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleOpenHatChange}
+              value={this.props.sounds.sound20.audio}
+              name="open-hat"
+              title="Dallas"
+            />
+            Dallas
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleOpenHatChange}
+              value={this.props.sounds.sound21.audio}
+              name="open-hat"
+              title="Slat"
+            />
+            SLAT 🐍
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleOpenHatChange}
+              value={this.props.sounds.sound22.audio}
+              name="open-hat"
+              title="Live"
+            />
+            Live
+          </label>
         </div>
 
         <div className="sub">
           <h3>Sub</h3>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSubChange}
+              defaultChecked
+              value={this.props.sounds.sound7.audio}
+              name="sub"
+              title="F"
+            />
+            F
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSubChange}
+              value={this.props.sounds.sound23.audio}
+              name="sub"
+              title="A#"
+            />
+            A#
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSubChange}
+              value={this.props.sounds.sound24.audio}
+              name="sub"
+              title="C"
+            />
+            C
+          </label>
+          <label>
+            <input
+              type="radio"
+              onChange={this.props.handleSubChange}
+              value={this.props.sounds.sound25.audio}
+              name="sub"
+              title="F#"
+            />
+            F#
+          </label>
         </div>
 
         <div className="clap">
