@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 import Pad from "./Pad";
+import SoundSelector from "./SoundSelector";
 import sounds from "./sounds";
 
 class App extends Component {
   state = {
+    sounds: sounds,
     first808: sounds.sound1,
     second808: sounds.sound2,
     kick: sounds.sound3,
@@ -15,9 +17,19 @@ class App extends Component {
     clap: sounds.sound8
   };
 
+  handleFirst808Change = e => {
+    e.preventDefault();
+    //1. copy current state
+    console.log("changed");
+    console.log(this.state.first808);
+    //2. change the sound
+    this.setState({ first808: e.target.value });
+  };
+
   handleKeyDown = e => {
     if (e.key === "a") {
       console.log("a has been pressed");
+      console.log(this.state.first808);
       const audio = new Audio(`${this.state.first808.audio}`);
       audio.loop = false;
       audio.play();
@@ -53,6 +65,7 @@ class App extends Component {
       audio.play();
     }
     if (e.key === "l") {
+      console.log("k has been pressed");
       const audio = new Audio(`${this.state.sub.audio}`);
       audio.loop = false;
       audio.play();
@@ -68,7 +81,6 @@ class App extends Component {
   render() {
     return (
       <div className="controller">
-        <Pad handleKeyDown={this.handleKeyDown} type={808} />
         <Pad handleKeyDown={this.handleKeyDown} />
         <Pad handleKeyDown={this.handleKeyDown} />
         <Pad handleKeyDown={this.handleKeyDown} />
@@ -76,6 +88,11 @@ class App extends Component {
         <Pad handleKeyDown={this.handleKeyDown} />
         <Pad handleKeyDown={this.handleKeyDown} />
         <Pad handleKeyDown={this.handleKeyDown} />
+        <Pad handleKeyDown={this.handleKeyDown} />
+        <SoundSelector
+          sounds={this.state.sounds}
+          handleFirst808Change={this.handleFirst808Change}
+        />
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React from "react";
-import Sound from "react-sound";
 
 class Pad extends React.Component {
   render() {
